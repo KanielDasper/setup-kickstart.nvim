@@ -13,8 +13,9 @@ return {
     }
     dashboard.section.buttons.val = {
       dashboard.button('e', '🗂️ New file', ':ene <BAR> startinsert <CR>'),
-      dashboard.button('SPC s f', '🔍 Search file', '<Space>sf <CR>'),
-      dashboard.button('SPC s g', '🔭 Search grep', '<Space>sg <CR>'),
+      -- dashboard functionality work in progress
+      dashboard.button('s f', '🔍 Search file', '<Space>sf <CR>'),
+      dashboard.button('s g', '🔭 Search grep', '<Space>sg <CR>'),
       dashboard.button('q', '🚪 Quit NVIM', ':qa<CR>'),
     }
     local handle = io.popen 'fortune'
