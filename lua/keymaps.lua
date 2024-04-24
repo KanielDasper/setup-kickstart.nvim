@@ -48,8 +48,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- My own custom keymaps
 vim.api.nvim_set_keymap('n', '<leader><tab>', '<C-w>w', { desc = 'Switch windows fast!' })
-vim.keymap.set('n', '<leader>Wc', 'a{}<Esc>i', { desc = '(W)rite {C}urly Brackets and step inside' })
-vim.keymap.set('n', '<leader>Ws', 'a[]<Esc>i', { desc = '(W)rite [S]quare Brackets and step inside' })
-vim.keymap.set('n', '<leader>Wp', 'a()<Esc>i', { desc = '(W)rite (P)arenthesis and step inside' })
--- vim: ts=2 sts=2 sw=2 et
+vim.keymap.set('n', '<leader>wc', 'a{}<Esc>i', { desc = '(W)rite {C}urly Brackets and step inside' })
+vim.keymap.set('n', '<leader>ws', 'a[]<Esc>i', { desc = '(W)rite [S]quare Brackets and step inside' })
+vim.keymap.set('n', '<leader>wp', 'a()<Esc>i', { desc = '(W)rite (P)arenthesis and step inside' })
