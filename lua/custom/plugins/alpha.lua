@@ -17,12 +17,11 @@ return {
       [[                                                                                                   ]],
     }
     dashboard.section.buttons.val = {
-      dashboard.button('e', '🗂️ New file', ':ene <BAR> startinsert <CR>'),
-      -- dashboard functionality work in progress
-      dashboard.button('s f', '🔍 Search file', '<Space>sf <CR>'),
-      dashboard.button('s g', '🔭 Search grep', '<Space>sg <CR>'),
-      dashboard.button('Ctrl f', 'Open Filetree', '<C-f> <CR>'),
-      dashboard.button('q', '🚪 Quit NVIM', ':qa<CR>'),
+      dashboard.button('e', '新檔案New file', ':ene <BAR> startinsert <CR>'),
+      dashboard.button('s f', '搜尋檔案Search File', '<Space>sf <CR>'),
+      dashboard.button('s g', '望遠鏡Search Grep', '<Space>sg <CR>'),
+      dashboard.button('Ctrl f', '打開⽊Open Filetree', '<C-f> <CR>'),
+      dashboard.button('q', '離開Quit NeoVim', ':qa<CR>'),
     }
     local handle = io.popen 'fortune'
     local fortune = handle:read '*a'
