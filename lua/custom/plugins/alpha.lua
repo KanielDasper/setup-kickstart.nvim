@@ -21,6 +21,7 @@ return {
       -- dashboard functionality work in progress
       dashboard.button('s f', '🔍 Search file', '<Space>sf <CR>'),
       dashboard.button('s g', '🔭 Search grep', '<Space>sg <CR>'),
+      dashboard.button('Ctrl f', 'Open Filetree', '<C-f> <CR>'),
       dashboard.button('q', '🚪 Quit NVIM', ':qa<CR>'),
     }
     local handle = io.popen 'fortune'
