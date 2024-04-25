@@ -134,7 +134,6 @@ return {
 
       local servers = {
         clangd = {},
-        gopls = {},
         pyright = {},
         rust_analyzer = {},
         html = {},
@@ -142,6 +141,9 @@ return {
         bashls = {},
         cssls = {},
         rubocop = {},
+        dockerls = {},
+        jsonls = {},
+        ast_grep = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 
         lua_ls = {
